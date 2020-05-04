@@ -19,7 +19,9 @@ const Navegador = ({darkMode, setDarkMode}) => {
   return (
     <div>
       <Navbar className="nav-bar justify-content-end" >
-        <Navbar.Brand className="navbar-text font-weight-bold "  href="/" >
+        <Link className="navbar-brand  navbar-text font-weight-bold" 
+        to="/"
+        >
         <Image
             src={logo}
             width="30"
@@ -27,7 +29,7 @@ const Navegador = ({darkMode, setDarkMode}) => {
             className="d-inline-block align-top mr-2"  
           />{" "}
         Spotify
-        </Navbar.Brand >
+        </Link >
 
         <Nav className="mr-auto "  >
         <ul className="navbar-nav mr-auto  ">
