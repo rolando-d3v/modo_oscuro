@@ -1,0 +1,59 @@
+.nav-bar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+  }
+  
+  .sidebar {
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    z-index: 999;
+    transform: translate3d(100%, 0, 0);
+    transition: all 0.5s ease 0s;
+    visibility: visible;
+    background: #f4f5f7;
+  }
+  
+  .sidebar__toggle {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: #f4f5f7;
+  }
+  
+  .sidebar__close {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .sidebar__menu {
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+  
+  .sidebar li {
+    padding: 0.8em;
+  }
+  
+  .sidebar a {
+    color: #42526e;
+    text-decoration: none;
+  }
+  
+  .sidebar a:hover {
+    color: #244973;
+  }
+  
+  .sidebar-visible.sidebar {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  
