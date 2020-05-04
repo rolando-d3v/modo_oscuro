@@ -1,6 +1,7 @@
 import React from 'react';
-import { NavItem, NavLink, Nav } from 'react-bootstrap';
+import { NavItem, Nav } from 'react-bootstrap';
 import { FaTimesCircle, FaBriefcase, FaMoneyBill, FaAddressBook, FaSignOutAlt } from "react-icons/fa";
+import {Link} from "react-router-dom"
 
 const navList = [
     { icon: <FaBriefcase />, link: "/", menu: "Examen" },
@@ -20,9 +21,9 @@ const SidebarComponent = (props ) => {
                 <Nav className="list-unstyled pb-3"  >
                     {navList.map((nav, i) => (
                         <NavItem key={i} >
-                            <NavLink href={nav.link}>
+                            <Link  className="nav-link"  to={nav.link}>
                                 <span className="mr-3">{nav.icon}</span> {nav.menu}
-                            </NavLink>
+                            </Link>
                         </NavItem>
                     ))}
                 </Nav >

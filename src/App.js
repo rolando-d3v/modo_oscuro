@@ -5,6 +5,7 @@ import Preguntas from './components/alumno/Preguntas'
 import './App.scss';
 
 
+
 function App() {
 
   const [darkMode, setDarkMode] = React.useState(getInitialMode());
@@ -51,8 +52,6 @@ function App() {
            <Route exact path="/alumno/preguntas" component={Preguntas}/> 
           </Switch>
         </div>
-    
-
       </main>
 
       </BrowserRouter>
