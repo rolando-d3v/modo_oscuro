@@ -47,17 +47,15 @@ function App() {
 
         <Navegador darkMode={darkMode} setDarkMode={setDarkMode} />
 
-        <main className="container" >
-
-        <div className="container-fluid">
+      <main className="container-fluid p-0" >
           <Switch>
            <Route exact={true} path="/" component={Home} />
            <Route exact={true} path="/login" component={Login} />
            <Route exact={true}  path="/preguntas" component={Preguntas}/> 
            <Route exact={true}  path="*" component={Error404}/> 
           </Switch>
-        </div>
       </main>
+        
 
       </BrowserRouter>
     </div>
@@ -67,10 +65,3 @@ function App() {
 
 
 export default App;
-
-
-
-
-
-// const rootElement = document.getElementById("root");
-// ReactDOM.render(<App />, rootElement);

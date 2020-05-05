@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {Fragment} from "react";
+import SetCarousel from "../components/carousel"
+
 
 export default function home() {
-    return (
-        <div>
-            <h3>estamos en Home</h3>
-        </div>
-    )
+  return (
+    <Fragment>
+     <SetCarousel />
+    </Fragment>
+  );
 }
