@@ -13,8 +13,6 @@ const navList = [
 const SidebarComponent = (props ) => {
 
     return (
-       
-
         <div className={`sidebar ${props.isOpen ? 'sidebar-visible' : ''}` }  >
             <FaTimesCircle className="sidebar__close h2" onClick={props.toggle} />
             <div className="sidebar__menu mt-3 "  >

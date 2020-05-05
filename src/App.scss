@@ -4,6 +4,8 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+
+
 // modo DIA
 .light-mode {
   background-color: #fff;
@@ -12,16 +14,15 @@ body {
 
 }
 
-.light-mode nav {
-  transition: background-color 0.25s ease-out;
-}
 
 
 
 // MODO NOCHE
 .dark-mode {
-  background-color: #1a1919;
+  background-color: #1d2029;
   color: #999 !important;
+  transition: all 0.5s ease 0s;
+  visibility: visible;
 
   Table{
     background-color: #4d4c4cfb;
@@ -31,7 +32,7 @@ body {
   }
 
   .sidebar{
-    background-color: #353434;
+    background-color: #292d3a;
     color: #999 !important;
   }
   .nav-link{
@@ -48,6 +49,10 @@ body {
 
 }
 
+
+
+// navbar
+
 .dark-mode Navbar {
     background-color: #1a1919;
     color: #999 !important;
@@ -61,6 +66,15 @@ body {
 .dark-mode nav {
   background-color: #1b2938;
 }
+
+.light-mode nav {
+  transition: background-color 0.25s ease-out;
+}
+
+
+
+
+
 
 nav {
   width: 100%;
@@ -85,17 +99,17 @@ h1 {
 
 .toggle {
   position: relative;
-  padding: 0 4px;
+  padding: 0 0px;
   display: flex;
   align-items: center;
 }
 
 input[type="checkbox"].checkbox {
-  width: 40px;
-  height: 10px;
+  width: 50px;
+  height: 23px;
   background: #555;
   position: relative;
-  border-radius: 5px;
+  border-radius: 50px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

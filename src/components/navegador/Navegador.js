@@ -4,7 +4,7 @@ import { FaUserTie, FaIdCard } from "react-icons/fa";
 import { IoMdReorder } from "react-icons/io";
 import Sidebar from "./Sidebar";
 import logo from "../../img/logo.png";
-import "./navegador.css";
+import "./navegador.scss";
 import { Link } from "react-router-dom";
 import '../../App.scss'
 
@@ -40,7 +40,7 @@ const Navegador = ({darkMode, setDarkMode}) => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to={"/alumno/preguntas"} className="nav-link">
+                <Link to={"/preguntas"} className="nav-link">
                   <FaIdCard className="mx-1" />
                   Preguntas
                 </Link>
@@ -67,8 +67,6 @@ const Navegador = ({darkMode, setDarkMode}) => {
           <span style={{ color: darkMode ? "slateblue" : "grey" }}>☾</span>
         </div>
       <Sidebar toggle={toggle} isOpen={toggleState} />
-
-       {/* <h1 className="text-center">Toggle Sidebar using hooks Rolando </h1>  */}
     </div>
   );
 };

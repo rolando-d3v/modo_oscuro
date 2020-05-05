@@ -2,9 +2,9 @@ import React from 'react'
 import '../../App.scss'
 import {Table } from 'react-bootstrap'
 
-const Preguntas = () => {
+const Pregunta = () => {
     return (
-        <Table striped bordered hover >
+        <Table striped bordered hover responsive >
         <thead className="thead-dark" >
           <tr>
             <th>#</th>
@@ -37,4 +37,4 @@ const Preguntas = () => {
     )
 }
 
-export default Preguntas
+export default Pregunta
