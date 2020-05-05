@@ -47,8 +47,6 @@ const Navegador = ({darkMode, setDarkMode}) => {
               </li>
             </ul>
         </Nav>
-
-          {/* Button para el sidebar */}
         <IoMdReorder className="sidebar__toggle" onClick={toggle} />
       </Navbar>
 

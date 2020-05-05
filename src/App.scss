@@ -4,58 +4,127 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-
-
-// modo DIA
+// modo DIA  Global
 .light-mode {
   background-color: #fff;
   color: #333 !important;
   transition: background-color 0.25s ease-out;
 
+  //  style Togle de dia
+
+  input[type="checkbox"].checkbox {
+    width: 52px;
+    height: 24px;
+    background: #282943;
+    position: relative;
+    border-radius: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    vertical-align: 2px;
+    outline: none;
+  }
+
+  input[type="checkbox"].checkbox:checked + label {
+    left: 30px;
+  }
+
+  input[type="checkbox"].checkbox:focus-visible {
+    outline: solid 2px #ffffff;
+  }
+
+  input[type="checkbox"].checkbox + label {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: absolute;
+    left: 2px;
+    background: #fff;
+    opacity: 0.9;
+    background-color: #00ffff;
+    margin: 0 !important;
+  }
 }
 
-
-
-
-// MODO NOCHE
+// MODO NOCHE  GLOBAL
 .dark-mode {
   background-color: #1d2029;
   color: #999 !important;
   transition: all 0.5s ease 0s;
   visibility: visible;
 
-  Table{
+  Table {
     background-color: #4d4c4cfb;
     color: #999 !important;
     border-color: #424242;
     transition: background-color 0.05s ease-out;
   }
 
-  .sidebar{
+  .sidebar {
     background-color: #292d3a;
     color: #999 !important;
   }
-  .nav-link{
+  .nav-link {
     color: #999 !important;
   }
 
-  .navbar-text{
+  .navbar-text {
     color: #999 !important;
   }
 
-  .preguntas{
+  .preguntas {
     background-color: #1a1919;
   }
 
+  //  style de TOGLE de noche 
+
+  input[type="checkbox"].checkbox {
+    width: 52px;
+    height: 24px;
+    background: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
+    position: relative;
+    border-radius: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    vertical-align: 2px;
+    outline: none;
+  }
+
+  input[type="checkbox"].checkbox:checked + label {
+    left: 30px;
+  }
+
+  input[type="checkbox"].checkbox:focus-visible {
+    outline: solid 2px #ffffff;
+  }
+
+  input[type="checkbox"].checkbox + label {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: absolute;
+    left: 2px;
+    background: #fff;
+    opacity: 0.9;
+    background-color: #282943;
+    margin: 0 !important;
+  }
 }
-
-
 
 // navbar
 
 .dark-mode Navbar {
-    background-color: #1a1919;
-    color: #999 !important;
+  background-color: #1a1919;
+  color: #999 !important;
 }
 
 .light-mode Navbar {
@@ -71,18 +140,12 @@ body {
   transition: background-color 0.25s ease-out;
 }
 
-
-
-
-
-
 nav {
   width: 100%;
   display: flex;
   background-color: steelblue;
   padding: 20px;
 }
-
 
 main {
   padding: 0.5em;
@@ -97,6 +160,8 @@ h1 {
   margin: 0;
 }
 
+// togle
+
 .toggle {
   position: relative;
   padding: 0 0px;
@@ -104,45 +169,9 @@ h1 {
   align-items: center;
 }
 
-input[type="checkbox"].checkbox {
-  width: 50px;
-  height: 23px;
-  background: #555;
-  position: relative;
-  border-radius: 50px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  vertical-align: 2px;
-  outline: none;
-}
-
-input[type="checkbox"].checkbox:checked + label {
-  left: 30px;
-}
-
-input[type="checkbox"].checkbox:focus-visible {
-  outline: solid 2px white;
-}
-
-input[type="checkbox"].checkbox + label {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  position: absolute;
-  left: 2px;
-  background: #fff;
-  opacity: 0.9;
-  background-color: cyan;
-}
-
 .toggle-container {
   display: flex;
-  margin: 0 0 0 30px;
+  margin: 0 0 4px 15px;
 }
 
 .toggle-container > span {
@@ -151,10 +180,12 @@ input[type="checkbox"].checkbox + label {
   border: none;
   cursor: pointer;
   transition: color 0.3s ease;
-  margin-top: 4px;
-  margin-right: 2px;
+  margin-top: 5px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .toggle-container > span:last-child {
   margin-top: 5px;
+  margin-left: 4px;
 }
