@@ -9,3 +9,44 @@
  ol {
      margin-bottom: 0px !important;
  }
+
+
+//modo responsive para phone
+@media screen and (max-width: 500px){
+	
+	.carousel-caption{
+
+        height: 40%;
+        font-size: 50%; 
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        
+        h3 {
+            font-size: 100%; 
+        }
+	}
+
+
+}
+
+
+
+
+//  //modo responsive para phone
+//  @media screen and (max-width: 700px){
+// 	.container{
+// 		grid-template-columns: 1fr;
+// 	}
+
+// 	.img{
+// 		display: none;
+// 	}
+
+// 	.wave{
+// 		display: none;
+// 	}
+
+// 	.login-content{
+// 		justify-content: center;
+// 	}
+// }
