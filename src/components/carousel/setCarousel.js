@@ -25,6 +25,7 @@ export default function setCarousel() {
           className="d-block w-100"
           src={carousel02}
           alt="Third slide"
+          loading="lazy"
         />
 
         <Carousel.Caption>
@@ -37,6 +38,7 @@ export default function setCarousel() {
           className="d-block w-100"
           src={carousel03}
           alt="Third slide"
+          loading="lazy"
         />
 
         <Carousel.Caption>
@@ -51,6 +53,7 @@ export default function setCarousel() {
           className="d-block w-100"
           src={carousel04}
           alt="Third slide"
+          loading="lazy"
         />
 
         <Carousel.Caption>
