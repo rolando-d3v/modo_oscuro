@@ -1,4 +1,6 @@
-https://raw.githubusercontent.com/karlhadwen/pokemon/master/pokemon-preview.png
+
+
+![Preview](https://raw.githubusercontent.com/karlhadwen/pokemon/master/pokemon-preview.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
